@@ -1,8 +1,7 @@
 package com.example.heyukun.rxretrofitmvpdemo.request;
 
-import com.example.heyukun.rxretrofitmvpdemo.entity.Book;
+import com.example.heyukun.rxretrofitmvpdemo.domain.entity.Book;
 
-import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 import rx.Observable;
