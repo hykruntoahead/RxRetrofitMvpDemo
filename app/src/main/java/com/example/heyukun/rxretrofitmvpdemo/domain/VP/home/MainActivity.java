@@ -55,8 +55,13 @@ public class MainActivity extends AppCompatActivity implements BookView{
         Toast.makeText(getApplicationContext(),error,Toast.LENGTH_SHORT).show();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mBookPresenter.onStop();
+    }
 
-//    private void usualReq(){
+    //    private void usualReq(){
 //        Retrofit retrofit = new Retrofit.Builder()
 //                .baseUrl("https://api.douban.com/v2/")
 //                .addConverterFactory(GsonConverterFactory.

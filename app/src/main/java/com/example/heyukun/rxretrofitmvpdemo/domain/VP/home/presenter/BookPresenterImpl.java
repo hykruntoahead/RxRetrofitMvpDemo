@@ -46,6 +46,7 @@ public class BookPresenterImpl implements IPresenter{
       if(mCompositeSubscription.hasSubscriptions()){
           mCompositeSubscription.unsubscribe();
       }
+      mContext = null;
     }
 
     @Override
